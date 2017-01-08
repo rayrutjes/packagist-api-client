@@ -1,0 +1,36 @@
+{
+    "name": "rayrutjes/packagist-api-client",
+    "type": "library",
+    "description": "Simple Packagist API Client in PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raymond Rutjes",
+            "email": "raymond.rutjes@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/rayrutjes/packagist-api-client/issues",
+        "source": "https://github.com/rayrutjes/packagist-api-client"
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "~5.0|~6.0",
+        "phpunit/phpunit": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "PackagistApi\\": "src/",
+            "PackagistApi\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "guzzlehttp/guzzle" : "To use GuzzleHttpAdapter, require guzzlehttp/guzzle:~5.0|~6.0."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
