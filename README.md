@@ -50,7 +50,7 @@ $packagist = new Client($adapter);
 // ...
 ```
 
-### Returns all package names
+### Retrieve all package names available
 
 Accepts the following optional parameters:
 - vendor
@@ -67,9 +67,9 @@ $packageNames = $packagist->getAllPackageNames([
 var_dump($packageNames);
 ```
 
-### Get package with all its download statistics
+### Get a package with all its download statistics
 
-With throw an `PackagistApi\Exception\HttpException` if the package does not exist.
+Will throw an `PackagistApi\Exception\HttpException` if the package does not exist.
 
 ```php
 <?php
